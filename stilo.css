@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(img/fondo_blue.jpg) no-repeat;
+  background-size: cover;
+}
+
+#logo {
+  width: 29%;
+  float: right;
+}
+
+table {
+  border: 5px solid rgba(47, 138, 168, 1);
+  width: 60%;
+  height: auto;
+  margin: 3% auto;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  background: white;
+}
+
+tr,
+td {
+  padding: 10px;
+  /* border-top: 1px solid black; */
+}
+
+label,
+input {
+  /* margin-left: 1%;
+  margin-bottom: 2%; */
+  margin: 1%;
+  padding: 0.3%;
+}
+
+#unidades {
+  width: 10%;
+}
+
+#articulos {
+  width: 90%;
+}
+
+/****************************************************************/
+#datosEfectivo {
+  display: none;
+}
+
+#datosTarjeta {
+  display: none;
+}
+/************************************************/
+#articulos,
+#precioFinal,
+#importeEfectivo {
+  border: 1px solid black;
+}

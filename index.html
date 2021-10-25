@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/dtx_white.jpg" type="image/jpg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARRITO DE LA COMPRA</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="stilo.css">
+    <!-- JavaScript -->
+    <script type="text/javascript" src="codigo.js"></script>
+</head>
+
+<body>
+    <form name="MiFormulario">
+        <table>
+            <tr>
+                <td>
+                    <label for="nombre">Nombre del artículo:</label>
+                    <input type="text" name="nombre" id="nombre" autofocus>
+                </td>
+                <td><img id="logo" src="img/dtx_white.jpg" alt="Dentaltix"></td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label for="precio">Precio del artículo:</label>
+                    <input type="text" name="precio" id="precio">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="unidades">Unidades:</label>
+                    <input type="number" name="unidades" id="unidades" min="1" value="1">
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Añadir al carrito" name="add" id="add">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="articulos">Artículos del carrito:</label>
+                    <input type="text" name="articulos" id="articulos" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="precioFinal">Precio total del carrito:</label>
+                    <input type="text" name="precioFinal" id="precioFinal" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="metodoPago">Forma de pago:</label>
+                    <select type="text" name="metodoPago" id="metodoPago">
+                        <option selected value="" disabled>--Seleccione--</option>
+                        <option value="Tarjeta" id="tarjeta">Tarjeta</option>
+                        <option value="Efectivo" id="efectivo">Efectivo</option>
+                    </select>
+                    <!-- -------------------->
+                </td>
+                <td>
+                    <div id="datosTarjeta">
+                        <label for="titularTarjeta">Titular de la tarjeta:</label>
+                        <input type="text" name="titularTarjeta" id="titularTarjeta"><br>
+                        <label for="numTarjeta">Número de tarjeta:</label>
+                        <input type="text" name="numTarjeta" id="numTarjeta" minlength="16" maxlength="16"> <br>
+                        <label for="cvvTarjeta">CVV:</label>
+                        <input type="text" name="cvvTarjeta" id="cvvTarjeta" minlength="3" maxlength="3">
+                    </div>
+                    <!-- --------------------- -->
+                    <div id="datosEfectivo">
+                        <label for="importeEfectivo">Importe efectivo:</label>
+                        <input type="text" name="importeEfectivo" id="importeEfectivo" disabled>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="aceptoCondiciones" id="aceptoCondiciones" ch>
+                    <label for="aceptoCondiciones">Acepto las condiciones de compra</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Imprimir" disabled name="imprimir" id="imprimir">
+                    <input type="reset" value="Restablecer" name="restablecer" id="restablecer">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
