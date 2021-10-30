@@ -1,3 +1,3 @@
 # CarritoDeLacompra
-Carrito de la compra con JS,CSS y HTM
+Carrito de la compra con JS,CSS y HTML
 https://gonzalosc95.github.io/CarritoDeLacompra/
