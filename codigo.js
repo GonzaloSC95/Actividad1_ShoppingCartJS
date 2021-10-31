@@ -100,6 +100,9 @@ function addToCarrito() {
         console.log(articulos.toString());
         console.log(precioFinal);
         nombre.focus();
+        //------------------------------------------
+        // @ts-ignore
+        document.getElementById("importeEfectivo").value = precioFinal;
     }
 
     //--------------------
